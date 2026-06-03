@@ -1,0 +1,2 @@
+tar: . name=@name@-@version@
+spec: .gear/gnome-shell-extension-another-tgproxy.spec
