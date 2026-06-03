@@ -1,0 +1,16 @@
+{
+  "name": "another-tgproxy-extension",
+  "version": "1.0.0",
+  "description": "GNOME Shell Quick Settings toggle for the Another TGProxy daemon.",
+  "license": "GPL-3.0-or-later",
+  "private": true,
+  "scripts": {
+    "lint": "eslint another-tgproxy@ampernic.space",
+    "lint:fix": "eslint another-tgproxy@ampernic.space --fix"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.39.3",
+    "@stylistic/eslint-plugin": "^5.9.0",
+    "eslint": "^9.39.3"
+  }
+}

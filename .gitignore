@@ -1,0 +1,4 @@
+*.shell-extension.zip
+*.zip
+*~
+node_modules/

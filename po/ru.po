@@ -1,0 +1,31 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Another TGProxy\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-06-03 14:18+0300\n"
+"Language-Team: Russian\n"
+"Language: ru\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: another-tgproxy@ampernic.space/extension.js:56
+msgid "Open"
+msgstr "Открыть"
+
+#: another-tgproxy@ampernic.space/extension.js:57
+msgid "Open in Telegram"
+msgstr "Открыть в Telegram"
+
+#: another-tgproxy@ampernic.space/extension.js:59
+msgid "Restart"
+msgstr "Перезапустить"
+
+#: another-tgproxy@ampernic.space/extension.js:60
+msgid "Quit"
+msgstr "Выход"
+
+#: another-tgproxy@ampernic.space/extension.js:91
+#: another-tgproxy@ampernic.space/extension.js:92
+msgid "Daemon not running"
+msgstr "Демон не запущен"
