@@ -27,7 +27,7 @@ pot update-po:
 	./update-locale.sh
 
 lint:
-	eslint $(SRC)
+	PATH="$(CURDIR)/node_modules/.bin:$$PATH" eslint $(SRC)
 
 enable:
 	gnome-extensions enable $(UUID)
