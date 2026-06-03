@@ -4,7 +4,19 @@
   <extends>space.ampernic.AnotherTGProxy</extends>
   <name>Quick Settings toggle</name>
   <summary>Start, stop and monitor the proxy from the GNOME Quick Settings menu</summary>
+  <description>
+    <p>
+      A GNOME Shell extension that adds a Quick Settings toggle for the Another
+      TGProxy daemon: start and stop the MTProto-over-WebSocket proxy and watch
+      its live status without opening the application.
+    </p>
+  </description>
+  <developer id="space.ampernic">
+    <name>Ampernic</name>
+  </developer>
   <metadata_license>CC0-1.0</metadata_license>
   <project_license>GPL-3.0-or-later</project_license>
   <url type="homepage">https://github.com/Another-TGProxy</url>
+  <url type="bugtracker">https://github.com/Another-TGProxy/another-tgproxy-extension/issues</url>
+  <url type="vcs-browser">https://github.com/Another-TGProxy/another-tgproxy-extension</url>
 </component>
