@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component type="addon">
+  <id>space.ampernic.AnotherTGProxy.Extension</id>
+  <extends>space.ampernic.AnotherTGProxy</extends>
+  <name>Quick Settings toggle</name>
+  <summary>Start, stop and monitor the proxy from the GNOME Quick Settings menu</summary>
+  <metadata_license>CC0-1.0</metadata_license>
+  <project_license>GPL-3.0-or-later</project_license>
+  <url type="homepage">https://github.com/Another-TGProxy</url>
+</component>
