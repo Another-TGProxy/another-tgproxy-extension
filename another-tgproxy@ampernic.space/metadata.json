@@ -2,8 +2,8 @@
   "uuid": "another-tgproxy@ampernic.space",
   "name": "Another TGProxy",
   "description": "Quick Settings toggle for the Another TGProxy daemon: start/stop the MTProto↔WebSocket proxy and see its live status, without opening the app.",
-  "shell-version": ["45", "46", "47", "48"],
-  "url": "https://github.com/Another-TGProxy",
+  "shell-version": ["45", "46", "47", "48", "49"],
+  "url": "https://github.com/Another-TGProxy/another-tgproxy-extension",
   "gettext-domain": "another-tgproxy@ampernic.space",
   "version-name": "1.0"
 }

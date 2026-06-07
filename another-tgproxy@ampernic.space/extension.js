@@ -62,6 +62,7 @@ class ProxyIndicator extends SystemIndicator {
 
         this._proxy = null;
         this._changedId = 0;
+        this._cancellable = new Gio.Cancellable();
         this._watchId = Gio.bus_watch_name(
             Gio.BusType.SESSION, BUS_NAME, Gio.BusNameWatcherFlags.NONE,
             () => this._onAppeared(),
@@ -73,6 +74,10 @@ class ProxyIndicator extends SystemIndicator {
             (_proxy, error) => {
                 if (error) {
                     logError(error, 'Another TGProxy: cannot reach daemon');
+                    if (this._changedId) {
+                        this._proxy.disconnectSignal(this._changedId);
+                        this._changedId = 0;
+                    }
                     this._proxy = null;
                     return;
                 }
@@ -117,13 +122,14 @@ class ProxyIndicator extends SystemIndicator {
                 'org.freedesktop.DBus', '/org/freedesktop/DBus',
                 'org.freedesktop.DBus', 'StartServiceByName',
                 new GLib.Variant('(su)', [BUS_NAME, 0]),
-                null, Gio.DBusCallFlags.NONE, -1, null, null);
+                null, Gio.DBusCallFlags.NONE, -1, this._cancellable, null);
         } catch (e) {
             logError(e, 'Another TGProxy: cannot activate daemon');
         }
     }
 
     destroy() {
+        this._cancellable.cancel();
         if (this._watchId)
             Gio.bus_unwatch_name(this._watchId);
         this._watchId = 0;
